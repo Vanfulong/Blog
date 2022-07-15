@@ -11,7 +11,7 @@ const Card = ({
   id: string;
 }) => {
   return (
-    <div className=" p-4 m-4 bg-white rounded-lg shadow-2xl">
+    <div className=" p-4 my-4  bg-white rounded-lg shadow-2xl">
       <div className="overflow-hidden rounded-lg">
         <Link to={`post/${id}`}>
           <img

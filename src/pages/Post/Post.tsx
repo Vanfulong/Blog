@@ -76,15 +76,17 @@ const Post = () => {
       </nav>
       <div className=" my-7 min-h-screen">
         <div className="mt-3">
-          <h1 className="text-center font-bold text-3xl">{data.title}</h1>
-          <div className=" p-4 md:px-20 xl:p-40 text-base md:text-lg  ">
+          <h1 className=" p-4 md:px-20 xl:px-40 md:text-center font-bold text-2xl md:text-3xl">
+            {data.title}
+          </h1>
+          <div className=" p-4 md:px-20 xl:px-40 text-base md:text-lg  ">
             {ReactHtmlParser(data.content)}
           </div>
         </div>
         {data.author === state.currentUser.uid ? (
           <Link
             to={`/edit/${id}`}
-            className=" text-blue-400 hover:text-blue-500 bg-white max-w-max font-medium text-sm md:text-lg px-5 flex flex-row underline ml-auto mr-20 "
+            className=" text-blue-400 hover:text-blue-500 bg-white max-w-max font-medium text-sm md:text-lg flex flex-row underline ml-auto mr-4 md:mr-20 xl:mr-40 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
