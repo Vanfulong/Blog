@@ -64,5 +64,9 @@
   },
   "browser": {
     "buffer": false
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.5"
   }
 }
