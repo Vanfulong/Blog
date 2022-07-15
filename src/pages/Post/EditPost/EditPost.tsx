@@ -54,7 +54,7 @@ const EditPost = () => {
         title: title,
         urlThumbnail: thumbnail,
       });
-      alert("Da thay doi thong tin thanh cong");
+      alert("Da chinh sua bai viet thanh cong");
       navigate(-1);
     } catch (err) {
       console.log(err);

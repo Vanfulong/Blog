@@ -19,7 +19,6 @@ const Post = () => {
       doc(db, "posts", id || ""),
       async (doc) => {
         setData(doc.data() || {});
-        console.log("first");
       },
       (error) => {
         console.log(error);
